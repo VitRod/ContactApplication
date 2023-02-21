@@ -1,29 +1,49 @@
 body {
-    background: #2C3238;
+    background: #2c382e;
 }
 
+.container-for-all { position:relative; }
+.video-background {
+    position:fixed;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+
+ .overlay {
+     position:absolute;
+     top:0;
+     left:0;
+     z-index:1;
+ }
+
 .page-header {
-    background-color: #0B4970;
+    background-color: yellow;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    opacity: 0.5;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #FFFFFF;
+    color: blue;
     font-size: 36pt;
     text-decoration: none;
 }
 
 .page-header p {
-    color: #FFFFFF;
+    color: blue;
 }
 
 .page-header a {
 font-size: 50px;
-color: #FFFFFF;
+color: blue;
 }
 
 .form-group label {
-    color: white;
+    color: blue;
 }
 
