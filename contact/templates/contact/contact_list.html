@@ -1,0 +1,12 @@
+{% extends 'contact/base.html' %}
+{% block content %}
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+            {% for person in persons %}
+                <div>
+                    <li class="list-group-item"><a href="{% url 'contact:contact_detail' person.id %}">{{ person.full_name }}</a></li>
+                </div>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
